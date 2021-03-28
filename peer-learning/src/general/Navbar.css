@@ -1,6 +1,6 @@
 #navDiv {
     width: 200px;
-    height: 100%;
+    height: 100vh;
     float: left;
     background-color: #ffffff;
     display: block;
@@ -16,14 +16,16 @@
 }
 
 #navBottom {
-    float: bottom;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .comp {
     display: block;
     width:100%;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .top {
