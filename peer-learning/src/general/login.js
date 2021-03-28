@@ -38,7 +38,7 @@ export default class Login extends Component {
                 if (password === pass && email === mail) {
                     // redirects to home page
                     this.setState({result : "Login successful!"})
-                    this.props.history.push("/groupstudy")
+                    this.props.history.push("/userhome")
                 } else {
                     // error message
                     this.setState({result :  "Incorrect email or password."})
@@ -70,7 +70,7 @@ export default class Login extends Component {
                 </div>
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">
-                    <Link className="nav-link" to="/groupstudy">Sign in</Link>
+                    <Link className="nav-link" to="/userhome">Sign in</Link>
                 </button>
                 <p className="forgot-password text-right">
                     <Link className="nav-link" to="/forgotpassword">Forgot Password</Link>
@@ -81,4 +81,3 @@ export default class Login extends Component {
         );
     }
 }
-//up to date
