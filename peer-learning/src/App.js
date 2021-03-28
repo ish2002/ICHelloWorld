@@ -8,7 +8,7 @@ import HomePage from "./general/Home";
 import Login from "./general/login";
 import SignUp from "./general/signup";
 import ForgotPassword from "./general/forgotpassword";
-import GroupStudy from './general/groupstudy';
+import User from "./User"
 
 function App() {
   return (<Router>
@@ -31,7 +31,7 @@ function App() {
           </div>
         </div>
       </nav>
-      
+
       <div className="outer">
         <div className="inner">
           <Switch>
@@ -40,11 +40,12 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={HomePage} />
             <Route path="/forgotpassword" component={ForgotPassword} />
-            <Route path="/groupstudy" component={GroupStudy} />
+            <Route path="/userhome" component={User} />
           </Switch>
         </div>
       </div>
-      </div></Router>
+      </div>
+      </Router>
   );
 }
 //added forgot password to switch case
