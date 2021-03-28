@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from "./general/Home";
 import Login from "./general/login";
 import SignUp from "./general/signup";
+import ForgotPassword from "./general/forgotpassword";
+import GroupStudy from './general/groupstudy';
 
 function App() {
   return (<Router>
@@ -37,11 +39,13 @@ function App() {
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={HomePage} />
+            <Route path="/forgotpassword" component={ForgotPassword} />
+            <Route path="/groupstudy" component={GroupStudy} />
           </Switch>
         </div>
       </div>
       </div></Router>
   );
 }
-
+//added forgot password to switch case
 export default App;
