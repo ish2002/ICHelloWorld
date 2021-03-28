@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import firebase from "../firebase.js"
 
 export default class Login extends Component {
@@ -18,7 +19,7 @@ export default class Login extends Component {
     handleChange(event) {
         this.setState({[event.target.name] : event.target.value})
     }
-    
+
     // submit button pressed
     handleSubmit(event) {
         event.preventDefault()
@@ -36,7 +37,7 @@ export default class Login extends Component {
                 if (password === pass && email === mail) {
                     // redirects to home page
                     this.setState({result : "Login successful!"})
-                    //this.props.history.push("/home")
+                    this.props.history.push("/groupstudy")
                 } else {
                     // error message
                     this.setState({result :  "Incorrect email or password."})
@@ -69,7 +70,7 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
                 <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
+                    <Link className="nav-link" to="/forgotpassword">Forgot Password</Link>
                 </p>
 
                 <p>{this.state.result}</p>
