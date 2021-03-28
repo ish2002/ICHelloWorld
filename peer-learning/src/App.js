@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to={"/sign-in"}>IC Peer Learn</Link>
+          <Link className="navbar-brand" to={"/home"}>IC Peer Learn</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -32,7 +33,7 @@ function App() {
       <div className="outer">
         <div className="inner">
           <Switch>
-            <Route exact path='/' component={Login} />
+            <Route exact path='/' component={HomePage} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={HomePage} />
