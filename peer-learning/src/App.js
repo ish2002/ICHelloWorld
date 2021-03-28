@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -9,6 +8,8 @@ import Login from "./general/login";
 import SignUp from "./general/signup";
 import ForgotPassword from "./general/forgotpassword";
 import User from "./User"
+import GroupStudy from './general/groupstudy';
+import NewStudyGroup from './general/newstudygroup';
 
 function App() {
   return (<Router>
@@ -19,10 +20,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Sign in</Link>
+                <Link className="nav-link" to={"/home"}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/home"}>Home</Link>
+                <Link className="nav-link" to={"/sign-in"}>Sign in</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
@@ -41,6 +42,8 @@ function App() {
             <Route path="/home" component={HomePage} />
             <Route path="/forgotpassword" component={ForgotPassword} />
             <Route path="/userhome" component={User} />
+            <Route path="/groupstudy" component={GroupStudy} />
+            <Route path="/newstudygroup" component={NewStudyGroup} />
           </Switch>
         </div>
       </div>
@@ -49,4 +52,5 @@ function App() {
   );
 }
 //added forgot password to switch case
+//added new study group to switch case
 export default App;
