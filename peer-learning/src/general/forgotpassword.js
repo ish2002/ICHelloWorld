@@ -19,50 +19,7 @@ export default class ForgotPassword extends Component {
         this.setState({[event.target.name] : event.target.value})
     }
     
-    // // request email button pressed
-    // handleRequestEmail(event) {
-    //     event.preventDefault()
-
-    //     const email = this.state.email
-    //     const shortcode = email.substring(0, email.indexOf('@'))
-
-    //     // email is the primary key of user database
-    //     firebase.database().ref('/users/' + shortcode).on('value', (snapshot) => {
-    //         // checks if there is an account with this email
-    //         if (snapshot.exists()) {
-    //             emailsent = true;
-    //             <form action="">
-    //                 {emailsent && (
-    //                     <div className="form-group">
-    //                       An email has been sent to you!
-    //                       this.setState({result : "Login successful!"});  
-    //                     </div>
-    //                 )}
-    //                 {error !== null && (
-    //                     <div className="form-group">
-    //                         {error}
-    //                     </div>
-    //                 )}
-    //                 <div className="form-group">
-    //                     <label>Email</label>
-    //                     <input
-    //                         name="email"
-    //                         type="email"
-    //                         className="form-control"
-    //                         placeholder="Email"
-    //                         value={this.state.email}
-    //                         onChange={this.handleChange}
-    //                     />
-    //                 </div>
-    //                 <button type="submit" className="btn btn-dark btn-lg btn-block">
-    //                     Send reset link
-    //                 </button>
-    //             </form>
-    //         }
-    //     })
-    // }
-
-        // submit button pressed
+    // submit button pressed
     handleRequestEmail(event) {
         event.preventDefault()
     

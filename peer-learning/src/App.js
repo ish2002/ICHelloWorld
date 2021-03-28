@@ -45,5 +45,5 @@ function App() {
       </div></Router>
   );
 }
-
+//added forgot password to switch case
 export default App;
