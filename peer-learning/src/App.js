@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -19,10 +18,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Sign in</Link>
+                <Link className="nav-link" to={"/home"}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/home"}>Home</Link>
+                <Link className="nav-link" to={"/sign-in"}>Sign in</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
