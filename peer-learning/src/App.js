@@ -52,4 +52,5 @@ function App() {
   );
 }
 //added forgot password to switch case
+//added new study group to switch
 export default App;

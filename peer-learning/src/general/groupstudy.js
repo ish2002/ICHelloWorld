@@ -16,3 +16,5 @@ export default class GroupStudy extends Component {
         );
     }
 }
+
+//works for new study group

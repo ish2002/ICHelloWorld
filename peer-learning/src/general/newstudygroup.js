@@ -32,7 +32,7 @@ export default class NewStudyGroup extends Component {
         })
     }
 
-    // submit button pressed
+    // new group details entered
     handleSubmit(event) {
         event.preventDefault()
         const shortcode1 = this.state.member1.substring(0, this.state.member1.indexOf('@'))
