@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.message {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -52,6 +60,13 @@ body, html, .App, #root, .outer {
   padding-bottom: 20px;
 }
 
+.outer h1 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
 .custom-control-label {
   font-weight: 400;
 }
@@ -68,3 +83,13 @@ body, html, .App, #root, .outer {
 .forgot-password a {
   color: #167bff;
 }
+
+.welcome {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 100px;
+  color:white;
+}
+
+
+
