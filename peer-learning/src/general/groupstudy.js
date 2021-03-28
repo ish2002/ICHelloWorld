@@ -15,6 +15,10 @@ export default class GroupStudy extends Component {
             </div>
         );
     }
+<<<<<<< HEAD
 }
 
 //works for new study group
+=======
+} 
+>>>>>>> 546f42dbac05b8a23396bf2fc3df5467ebfb8faa
