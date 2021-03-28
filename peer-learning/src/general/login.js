@@ -68,7 +68,9 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
+                <button type="submit" className="btn btn-dark btn-lg btn-block">
+                    <Link className="nav-link" to="/groupstudy">Sign in</Link>
+                </button>
                 <p className="forgot-password text-right">
                     <Link className="nav-link" to="/forgotpassword">Forgot Password</Link>
                 </p>
