@@ -1,0 +1,33 @@
+#navDiv {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: #ffffff;
+    display: block;
+}
+
+#navMiddle {
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+#navTop {
+    height: 150px;
+}
+
+#navBottom {
+    float: bottom;
+}
+
+.comp {
+    display: block;
+    width:100%;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.top {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
