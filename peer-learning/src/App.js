@@ -9,6 +9,8 @@ import Login from "./general/login";
 import SignUp from "./general/signup";
 import ForgotPassword from "./general/forgotpassword";
 import GroupStudy from './general/groupstudy';
+import NewStudyGroup from './general/newstudygroup';
+import ExistingStudyGroup from './general/existingstudygroup';
 
 function App() {
   return (<Router>
@@ -41,6 +43,8 @@ function App() {
             <Route path="/home" component={HomePage} />
             <Route path="/forgotpassword" component={ForgotPassword} />
             <Route path="/groupstudy" component={GroupStudy} />
+            <Route path="/newstudygroup" component={NewStudyGroup} />
+            <Route path="/existingstudygroup" component={ExistingStudyGroup} />
           </Switch>
         </div>
       </div>

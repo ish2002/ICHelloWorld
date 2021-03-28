@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class GroupStudy extends Component {
     render() {
         return (
-            <div className="Group">
+            <div className="App">
               <a className="message">Want to get cracking?</a>
               <Link to="/newstudygroup">
               <button type="Create my own study group" className="btn btn-dark btn-lg btn-block">Create my own study group</button>
